@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>HTML5</title>
+  <style>
+    :root {
+      --color-black: #000;
+      --color-white: #fff;
+      --color-grey-300-redesign: #b0b0b0;
+      background-color: var(--color-black);
+    }
+
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container-redesign {
+      margin: 0 auto;
+      padding-right: 12px;
+      padding-left: 12px;
+      max-width: 1920px;
+    }
+
+    .custom-error {
+      padding-top: 200px;
+      padding-bottom: 104px;
+      background-color: var(--color-black);
+    }
+
+    .custom-error__wrapper {
+      margin: 0 auto;
+      max-width: 351px;
+      text-align: center;
+    }
+
+    .custom-error__title {
+      color: var(--color-white);
+      font-weight: 400;
+      font-family: 'Unbounded', sans-serif;
+      font-size: 120px;
+      line-height: 1;
+      margin-bottom: 24px;
+    }
+
+    .custom-error__message {
+      font-weight: 500;
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      line-height: 1.2;
+      margin-bottom: 56px;
+      color: var(--color-grey-300-redesign);
+    }
+
+    @media (min-width: 768px) {
+      .custom-error {
+        padding-top: 164px;
+      }
+
+      .container-redesign {
+        padding-right: 16px;
+        padding-left: 16px;
+      }
+
+      .custom-error__wrapper {
+        max-width: 440px;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .custom-error {
+        padding-top: 175px;
+        padding-bottom: 175px;
+      }
+
+      .custom-error__wrapper {
+        max-width: 526px;
+      }
+
+      .custom-error__title {
+        font-size: 160px;
+      }
+
+      .custom-error__message {
+        font-size: 18px;
+        line-height: 1.4;
+      }
+    }
+
+    @media (min-width: 1280px) {
+      .custom-error {
+        padding-top: 240px;
+        padding-bottom: 240px;
+      }
+
+      .custom-error__wrapper {
+        max-width: 680px;
+      }
+
+      .custom-error__title {
+        font-size: 240px;
+      }
+
+      .custom-error__message {
+        font-size: 24px;
+      }
+
+      .container-redesign {
+        padding-right: 24px;
+        padding-left: 24px;
+      }
+    }
+  </style>
+ </head>
+ <body>
+  <section class="custom-error container-redesign">
+      <div class="custom-error__wrapper">
+        <h1 class="custom-error__title">500</h1>
+        <p class="custom-error__message">
+          Unfortunately, our website is temporarily unavailable - the data center which hosts it is out of service. We are currently working to restore it.
+        </p>
+      </div>
+    </section>
+ </body>
+</html>
